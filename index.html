@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>tarjeta de credito</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <main class="main-container">
+    <section class="main-container_background-section">
+      <div class="card">
+        <img class="card_logo" src="./images/card-logo.svg" alt="logo">
+      <p class="card_number">0000 0000 0000 0000</p>
+       <div class="card_details">
+        <p class="card_details-name">Jane Appleseed</p>
+        <p > <span class="card_month">00</span >/<span class="card_year">00</span> </p>
+       </div>
+      </div>
+      <div class="card-back">
+        <p class="card-back_cvc">000</p>
+       </div>
+    </section>
+    <section class="main-container_form-section">
+
+      <form action="" class="form">
+        <label class="form_label" for="cardholder">Cardholder Name</label>
+        <input class="form_input" type="text" name="cardholder" id="cardholder" placeholder=" e.g. Jane Appleseed">
+        <div class="form_cardholder--error error"></div>
+
+        <label class="form_label"  for="cardNumber"> Card Number</label>
+        <input class="form_input" type="text" name="cardNumber" id="cardNumber" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="form_inputnumber--error error"></div>
+
+        <div class="form_date-cvc">
+           <label class="form_label"  for="cardMonth">Exp. Date (MM/YY)</label>
+           <label class="form_label"  for="cardCvc">   CVC </label>
+           <div class="form_date"> 
+            <input type="text" class="form_input" maxlength="2" name="cardMonth" id="cardMonth" placeholder="MM">
+            <input type="text" class="form_input" maxlength="2" name="cardYear" id="cardYear" placeholder="YY">
+           </div>
+
+          <input type="text" class="form_input" maxlength="3" name="cardCvc" name="cardCvc" id="cardCvc" placeholder=" e.g. 123">
+          <!-- funcion error -->
+          <div class="form_errors-container">
+            <div class="form_input-mm--error error"></div>
+            <div class="form_input-yy--error error" ></div>
+
+          </div> 
+          <div class="form_input-cvc--error error"></div>
+
+        </div>
+        <input type="submit" value="Confirm" class="form_submit">
+
+      </form>
+
+      
+  <section class="thanks-section">
+    <img class="thanks-section_img" src="./images/icon-complete.svg" alt="complete icon">
+    <h1 class="thanks-section_title">Thank you!</h1>
+    <p class="thanks-section_text">We've added your card details</p> 
+    <button class="thanks-section_button">Continue</button>
+  </section>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- Completed state start -->
+
+
+
+
+<script src="main.js"></script>
+  
+
+</body>
+</html>
